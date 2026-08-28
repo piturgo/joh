@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joh Oliveira - Links</title>
+    <!-- Font Awesome para os ícones sociais -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #2b2b2b 0%, #1a1a1a 100%);
+            background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #111;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 680px;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 30px 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .top-icons {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 20px;
+            padding: 0 20px;
+        }
+
+        .top-btn {
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .top-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-pic {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .links-list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .link-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .link-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-content {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-grow: 1;
+        }
+
+        .link-icon-box {
+            width: 40px;
+            height: 40px;
+            background: #111;
+            color: #fff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .link-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #111;
+        }
+
+        .link-menu {
+            color: #777;
+            font-size: 16px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background: #111;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 18px;
+            transition: transform 0.2s;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .footer-links a {
+            color: #555;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .brand-badge {
+            background: #fff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #111;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .brand-badge span {
+            color: #666;
+            font-weight: 400;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Topo com botões de Ação -->
+        <div class="top-icons">
+            <button class="top-btn" title="Menu"><i class="fa-solid fa-asterisk"></i></button>
+            <button class="top-btn" title="Compartilhar"><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+        </div>
+
+        <!-- Informações do Perfil com a foto local -->
+        <img src="joh.jpg" alt="Joh Oliveira" class="profile-pic">
+        <h1>Joh Oliveira</h1>
+
+        <!-- Lista de Links -->
+        <div class="links-list">
+            <a href="https://www.instagram.com/joo.liviera" target="_blank" class="link-card">
+                <div class="link-content">
+                    <div class="link-icon-box"><i class="fa-brands fa-instagram"></i></div>
+                    <span class="link-title">Instagram</span>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical link-menu"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/johad-celestino-a3454b278" target="_blank" class="link-card">
+                <div class="link-content">
+                    <div class="link-icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+                    <span class="link-title">LinkedIn</span>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical link-menu"></i>
+            </a>
+
+            <a href="https://www.facebook.com/share/1cervc2xGH/?mibextid=wwXIfr" target="_blank" class="link-card">
+                <div class="link-content">
+                    <div class="link-icon-box"><i class="fa-brands fa-facebook-f"></i></div>
+                    <span class="link-title">Facebook</span>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical link-menu"></i>
+            </a>
+
+            <a href="https://wa.me/5511997221958" target="_blank" class="link-card">
+                <div class="link-content">
+                    <div class="link-icon-box"><i class="fa-brands fa-whatsapp"></i></div>
+                    <span class="link-title">WhatsApp</span>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical link-menu"></i>
+            </a>
+        </div>
+
+        <!-- Redes Sociais Inferiores -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/joo.liviera" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/johad-celestino-a3454b278" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/share/1cervc2xGH/?mibextid=wwXIfr" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://wa.me/5511997221958" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+
+      
+
+</body>
+</html>
